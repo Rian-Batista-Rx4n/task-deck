@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskDeck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">TaskDeck</h1>
+        <div class="nav-menu">
+            <button id="nav-btn-1" class="active">Overview</button>
+            <button id="nav-btn-2">Favorites</button>
+            <button id="nav-btn-3">Settings</button>
+        </div>
+    </nav>
+
+    <main>
+        <aside class="side-menu">
+            <button id="add-task" title="Adicionar tarefa">+</button>
+        </aside>
+
+        <section class="overview-main-menu">
+            <!-- Tasks criadas aparecem aqui -->
+        </section>
+    </main>
+
+    <!-- Menu de criação -->
+    <div class="create-task">
+        <div class="task-content">
+            <h2>New Task</h2>
+            <label>Title:</label>
+            <input type="text" id="task-title" placeholder="Task name" maxlength="32">
+
+            <label>Resume:</label>
+            <input type="text" id="task-resume" placeholder="Task Resume" maxlength="512">
+
+            <label>Description:</label>
+            <input type="text" id="task-description" placeholder="Task Description" maxlength="5024">
+
+            <label>Progress:</label>
+            <select name="task-progress" id="task-progress">
+                <option value="percentage">Percentage</option>
+                <option value="data">Data Limit</option>
+                <option value="increment">Increment</option>
+            </select>
+
+            <div class="task-actions">
+                <button id="add-task-final">Add</button>
+                <button id="close-task-menu">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="show-task">
+        <div class="task-show">
+            <h2>Title</h2>
+
+            <p>Description: </p>
+
+            <p>Progress: </p>
+
+            <div class="task-actions-show">
+                <button id="edit-task-menu">Edit</button>
+                <button id="remove-task-menu">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
