@@ -1,0 +1,202 @@
+:root {
+    --color-one: #0d1117;
+    --color-two: #161b22;
+    --color-three: #21262d;
+    --color-four: #30363d;
+    --color-five: #c9d1d9;
+    --color-six: #58a6ff;
+    --color-seven: #f85149;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--color-one);
+    color: var(--color-five);
+}
+
+nav {
+    background: var(--color-two);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-six);
+    margin: 0;
+}
+
+.nav-menu button {
+    background: none;
+    border: none;
+    color: var(--color-five);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu button.active {
+    border-bottom: 2px solid var(--color-six);
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.side-menu {
+    width: 80px;
+    background: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-right: 1px solid var(--color-four);
+}
+
+.side-menu button {
+    background: var(--color-six);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.side-menu button:hover {
+    transform: scale(1.1);
+}
+
+.overview-main-menu {
+    padding: 8px;
+    gap: 15px;
+    overflow-y: auto;
+    width: 98vw;
+    height: auto;
+    background: var(--color-three);
+    border-radius: 16px;
+    margin: 16px;
+}
+
+.tasks-item {
+    background: var(--color-two);
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+    border: solid 2px rgba(0,0,0,0);
+}
+
+.tasks-item:hover {
+    background: var(--color-four);
+    border: solid 2px blue;
+}
+
+.title-task {
+    font-weight: bold;
+    color: var(--color-six);
+    margin-bottom: 4px;
+}
+
+.resume-task {
+    color: var(--color-five);
+    font-size: 14px;
+}
+
+.info-task {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.task-delete-btn {
+    color: white;
+    background: var(--color-seven);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 48px;
+    transition: 0.2s;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    line-height: 54px;
+    border-radius: 16px;
+}
+
+.task-delete-btn:hover {
+    transform: scale(1.2);
+}
+
+.main-task {
+    width: 90%;
+}
+
+@media (max-width: 600px) {
+    .main-task {
+        width: 80%;
+    }
+}
+
+/* =============== MODAL =============== */
+.create-task {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.task-content {
+    background: var(--color-two);
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid var(--color-four);
+}
+
+.task-content input {
+    background: var(--color-three);
+    border: 1px solid var(--color-four);
+    padding: 6px;
+    color: var(--color-five);
+    border-radius: 6px;
+}
+
+.task-content select {
+    background: var(--color-three);
+    border: 1px solid var(--color-four);
+    padding: 6px;
+    color: var(--color-five);
+    border-radius: 6px;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.task-actions button {
+    background: var(--color-six);
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.task-actions button#close-task-menu {
+    background: var(--color-seven);
+}
