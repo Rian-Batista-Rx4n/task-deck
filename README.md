@@ -26,7 +26,7 @@ Designed and developed by **Rx4n**, this project aims to provide a simple yet pr
 
 1. **Clone or download** the repository:
 ```bash
-git clone https://github.com/Rian-Batista-Rx4n/taskdeck.git
+git clone https://github.com/Rian-Batista-Rx4n/task-deck.git
 ```
    
 2. Open the project folder and run:
