@@ -3,6 +3,8 @@
 A minimal, clean, and local task manager built with **HTML**, **CSS**, and **JavaScript**.  
 Designed and developed by **Rx4n**, this project aims to provide a simple yet productive way to organize daily tasks directly in your browser.
 
+🌐[**TaskDeck**](https://rian-batista-rx4n.github.io/task-deck/)
+
 ---
 
 ## Features
